@@ -182,7 +182,7 @@ h3.title::before {
   width: 24px;  /* アイコンの幅 */
   height: 24px; /* アイコンの高さ */
   margin-right: 8px; /* アイコンと文字の間のスペース */
-  background-image: url('images/icon128.png'); /* 表示する画像の指定 */
+  background-image: url('icons/icon128.png'); /* 表示する画像の指定 */
   background-size: contain; /* 画像がはみ出ないように調整 */
 
 }
