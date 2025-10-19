@@ -1,0 +1,188 @@
+/* 全体のスタイル設定 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Meiryo, system-ui, sans-serif;
+  background-color: #282c34;
+  color: #ffffff;
+  width: 250px;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* タイトル */
+h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #61dafb;
+  font-weight: 500;
+}
+
+/* スキップ秒数設定 */
+.setting-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #20232a;
+  color: #ffffff;
+  border: 1px solid #61dafb;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 10px rgba(97, 218, 251, 1.5);
+}
+
+/* メインの保存ボタン */
+button#save {
+  width: 50%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #61dafb 0%, #2998ff 100%);
+  color: #282c34;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.1s ease-out, box-shadow 0.2s ease-out;
+}
+
+button#save:hover {
+  box-shadow: 0 5px 15px rgba(41, 152, 255, 1.5);
+}
+
+button#save:active {
+  transform: scale(0.98);
+}
+
+/* 保存完了メッセージ */
+#status {
+  margin-top: 10px;
+  min-height: 0px;
+  font-size: 10px;
+  color: #2eff7b;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#status.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 2つのボタンを囲むグループ */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* 横並びボタンの共通スタイル */
+.action-button {
+  width: 50%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d0d0d0;
+  border: 1px solid #5a5f68;
+  background-color: #383c44;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-out;
+}
+
+.action-button:hover {
+  background-color: #4a4f58;
+  color: #ffffff;
+  border-color: #61dafb;
+}
+
+.action-button:active {
+  transform: scale(0.98);
+}
+
+.action-button:disabled {
+  background-color: #20232a;
+  color: #5a5f68;
+  cursor: not-allowed;
+  border-color: #383c44;
+  transform: none;
+}
+
+
+
+/* ★ 追加: コメント自動展開設定のスタイル */
+.comment-auto-expand {
+  display: flex;
+  justify-content: space-between; /* ラベルとチェックボックスを両端に */
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #444;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+.comment-auto-expand label {
+  margin-right: 0; /* ラベルの右マージンをリセット */
+  font-weight: bold;
+}
+
+.comment-auto-expand input[type="checkbox"] {
+  width: 16px; /* チェックボックスのサイズ調整 */
+  height: 16px;
+  accent-color: #61dafb; /* チェックボックスの色 */
+  cursor: pointer;
+}
+
+/* タイトル */
+h3.title { /* ← .title をつけて、より具体的に */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #61dafb;
+  font-weight: 500;
+  
+
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+
+filter: drop-shadow(0 0 3px #61dafb) drop-shadow(0 0 8px #2998ff);
+}
+h3.title::before {
+  content: ''; 
+  display: inline-block; 
+  width: 24px;  /* アイコンの幅 */
+  height: 24px; /* アイコンの高さ */
+  margin-right: 8px; /* アイコンと文字の間のスペース */
+  background-image: url('images/icon128.png'); /* 表示する画像の指定 */
+  background-size: contain; /* 画像がはみ出ないように調整 */
+
+}

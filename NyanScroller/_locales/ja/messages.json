@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "NyanScroller YouTube Shorts Scroller"
+  },
+  "extDesc": {
+    "message": "ショート動画の自動スクロール、コメント欄自動展開、ショートカットキー、バッド数、投稿日時、再生回数表示など、他にも便利な機能を追加します"
+  },
+  "SeekSeconds": {
+    "message": "スキップ秒数",
+    "description": "動画のシーク（早送り/巻き戻し）で移動する秒数を設定するラベル。"
+  },
+    "SaveSettings": {
+    "message": "設定を保存",
+    "description": "変更した設定を保存・確定するためのボタンラベル。"
+  },
+  "StandardVideos": {
+    "message": "通常動画",
+    "description": "YouTube ショートなどと比較した、一般的な動画形式を示すラベル。"
+  },
+  "Thumbnail": {
+    "message": "サムネイル",
+    "description": "動画のサムネイル画像を示すラベルや設定項目の見出し。"
+  },
+  "CommentAutoExpand": {
+    "message": "コメント自動展開",
+    "description": "動画のコメント欄を自動で全展開する機能の設定項目のラベル。"
+  },
+  "MessageSettingsSaved": {
+    "message": "設定を保存しました!!",
+    "description": "設定の保存が完了したことを示す、ユーザーへの成功メッセージ。"
+  },
+  "MessageCommentExpandEnabled": {
+    "message": "コメント自動展開を有効にしました",
+    "description": "コメント自動展開機能が有効になったことを示す、ユーザーへの通知メッセージ。"
+  },
+  "MessageCommentExpandDisabled": {
+    "message": " コメント自動展開を無効にしました",
+    "description": "コメント自動展開機能が無効になったことを示す、ユーザーへの通知メッセージ。"
+  },
+  "ErrorInvalidSecondsInput": {
+    "message": "有効な秒数を入力してください",
+    "description": "設定項目で、有効な秒数が入力されていない場合に表示するエラーメッセージ。"
+  }
+}

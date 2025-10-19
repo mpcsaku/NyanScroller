@@ -1,0 +1,44 @@
+{
+  "extName": {
+    "message": "NyanScroller YouTube Shorts Scroller"
+  },
+  "extDesc": {
+    "message": "Adds useful features like Shorts Auto-Scroll, Comment Expansion, and custom Shortcuts."
+  },
+  "SeekSeconds": {
+    "message": "Seek Seconds",
+    "description": "動画のシーク（早送り/巻き戻し）で移動する秒数を設定するラベル。"
+  },
+  "SaveSettings": {
+    "message": "Save Settings",
+    "description": "変更した設定を保存・確定するためのボタンラベル。"
+  },
+  "StandardVideos": {
+    "message": "Standard Videos",
+    "description": "YouTube ショートなどと比較した、一般的な動画形式を示すラベル。"
+  },
+  "Thumbnail": {
+    "message": "Thumbnail",
+    "description": "動画のサムネイル画像を示すラベルや設定項目の見出し。"
+  },
+  "CommentAutoExpand": {
+    "message": "Auto Comment Expansion",
+    "description": "動画のコメント欄を自動で全展開する機能の設定項目のラベル。"
+  },
+  "MessageSettingsSaved": {
+    "message": "Settings saved!!",
+    "description": "設定の保存が完了したことを示す、ユーザーへの成功メッセージ。"
+  },
+  "MessageCommentExpandEnabled": {
+    "message": "Automatic Comment Expansion is enabled.",
+    "description": "コメント自動展開機能が有効になったことを示す、ユーザーへの通知メッセージ。"
+  },
+  "MessageCommentExpandDisabled": {
+    "message": "Automatic Comment Expansion is disabled.",
+    "description": "コメント自動展開機能が無効になったことを示す、ユーザーへの通知メッセージ。"
+  },
+  "ErrorInvalidSecondsInput": {
+    "message": "Please enter a valid number of seconds.",
+    "description": "設定項目で、有効な秒数が入力されていない場合に表示するエラーメッセージ。"
+  }
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Nyan Scroller 設定</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="container">
+    <h3 class="title">NyanScroller</h3>
+
+    <div class="setting-row">
+      <label for="seconds" data-i18n="SeekSeconds">スキップ秒数</label>
+      <input type="number" id="seconds" min="0.1" step="0.1" value="2">
+    </div>
+
+    <button id="save" data-i18n="SaveSettings">設定を保存</button>
+    <div id="status"></div>
+
+    <div class="button-group">
+      <button id="watchRegularButton" class="action-button" data-i18n="StandardVideos">通常動画</button>
+      <button id="getThumbnailButton" class="action-button" data-i18n="Thumbnail">サムネイル</button>
+    </div>
+    <div class="setting-row comment-auto-expand">
+      <label for="autoExpandComments" data-i18n="CommentAutoExpand">コメント自動展開</label>
+      <input type="checkbox" id="autoExpandComments">
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

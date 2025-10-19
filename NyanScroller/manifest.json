@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.0",
+  "description": "__MSG_extDesc__",
+  "default_locale": "en",
+  "permissions": [
+    "storage", 
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "https://returnyoutubedislikeapi.com/*",
+    "https://asia-northeast1-chromeextension0206.cloudfunctions.net/*" 
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "onpage-styles.css"
+      ],
+      "matches": [
+        "*://*.youtube.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "commands": {
+    "get-thumbnail": {
+      "suggested_key": {
+        "default": "Ctrl+Left"
+      },
+      "description": "サムネイルを取得"
+    },
+    "open-regular-video": {
+      "suggested_key": {
+        "default": "Ctrl+Right"
+      },
+      "description": "ショート動画を通常動画で開く"
+    }
+  }
+}

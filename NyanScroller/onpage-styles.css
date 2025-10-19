@@ -1,0 +1,61 @@
+/* 画面上に表示するボタンのコンテナ */
+.nyan-onpage-container {
+  width: 100%; /* 親の幅に合わせる */
+  margin-bottom: 20px; /* 下のGOODボタンとの間に隙間を作る */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ボタンを中央揃えにする */
+  gap: 15px;
+}
+
+/* 画面上ボタンの共通スタイル */
+.nyan-onpage-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(28, 28, 28, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.nyan-onpage-button:hover {
+  background-color: rgba(40, 40, 40, 1);
+  border-color: #61dafb;
+  transform: scale(1.1);
+}
+
+/* 低評価数の数字部分 */
+dislike-button-view-model button .nyan-dislike-count {
+  margin-left: 6px !important;
+  font-size: 1.4rem !important;
+  white-space: nowrap !important;
+  pointer-events: none !important;
+}
+
+/* onpage-styles.css (プレイヤー基準に書き換えた完成版) */
+
+.shorts-date-badge {
+  /* ★ 変更: 親要素（プレイヤー）を基準にする */
+  position: absolute; 
+  z-index: 10; /* 他の要素に隠れないように、ちょっとだけ手前に出す */
+
+  bottom: 15px;
+  right: 10px;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font: 500 13px system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", sans-serif;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+
